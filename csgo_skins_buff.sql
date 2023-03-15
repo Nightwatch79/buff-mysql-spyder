@@ -1,7 +1,6 @@
 USE 你的库名称;
 
-/* DIRECTIONS():查看库中存储过程
-	   */
+/* DIRECTIONS():查看库中存储过程*/
 DELIMITER $$
 DROP PROCEDURE IF EXISTS Directions$$
 CREATE PROCEDURE Directions()
@@ -19,8 +18,7 @@ DELIMITER ;
 
 CALL Directions();
 
-/* DialyPrice_Min(skin_name):查找皮肤skin_name每天最低价格
-	完成 */
+/* DialyPrice_Min(skin_name):查找皮肤skin_name每天最低价格完成 */
 DELIMITER $$
 DROP PROCEDURE IF EXISTS DialyPrice_Min$$
 CREATE PROCEDURE DialyPrice_Min(IN s_name VARCHAR(20))
@@ -168,5 +166,3 @@ BEGIN
 	WHERE TABLE_SCHEMA = "你的库名称";
 END $$
 DELIMITER ;
-
-
